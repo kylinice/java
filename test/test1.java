@@ -10,5 +10,12 @@ public class test1 {
         System.out.println(s.equals(c));
         System.out.println(System.identityHashCode(s));
         System.out.println(System.identityHashCode(t));
+
+        short a = 128;
+        byte b = (byte)a;
+        System.out.printf(Short.toString(a) + '~' + Byte.toString(b));
+
+
+
     }
 }
