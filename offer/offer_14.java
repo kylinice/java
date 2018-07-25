@@ -30,12 +30,14 @@ public class offer_14 {
             System.out.println("empty");
         }
         int i=1;
+        //遍历head，头插法fir链表
         while(head!=null){
             ListNode data = new ListNode(head.val);
             data.next = fir;
             fir = data;
             head = head.next;
         }
+        //新建result链表存放结果
         ListNode result = null;
         while(fir!=null){
             if(i<=k){
@@ -48,6 +50,7 @@ public class offer_14 {
                 break;
             }
         }
+        //如果遍历完fir链表后i<=k,即k超出了链表的长度
         if(fir==null&&i<=k){
             return null;
         }else{
