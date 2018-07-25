@@ -1,8 +1,12 @@
 package test;
 
-import javax.swing.plaf.synth.SynthDesktopIconUI;
 
 public class test1 {
+
+    public static boolean isAdmin(String admin){
+        System.out.println(admin.toLowerCase());
+        return admin.toLowerCase().equals("admin");
+    }
     public static void main(String[] args) {
         String s = "hello";
         String t = "hello";
@@ -22,5 +26,9 @@ public class test1 {
         System.out.println(int2 <= int1);
         System.out.println(int2.compareTo(int1)==-1);
 
+        int x=20;
+        int y=5;
+        System.out.println(x+y+"");
+        System.out.println(isAdmin("Admin"));
     }
 }
