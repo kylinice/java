@@ -2,7 +2,7 @@ package offer;
 
 import java.util.ArrayList;
 
-public class offer_24 {
+public class offer_24_FindPath {
 
     public class TreeNode{
         int val = 0;
@@ -33,8 +33,8 @@ public class offer_24 {
 
 
     public static void main(String[] args) {
-        offer_24 test = new offer_24();
-        offer_24.TreeNode t = test.new TreeNode(1);
+        offer_24_FindPath test = new offer_24_FindPath();
+        offer_24_FindPath.TreeNode t = test.new TreeNode(1);
         //左
         t.left = test.new TreeNode(2);
         t.left.left = test.new TreeNode(4);

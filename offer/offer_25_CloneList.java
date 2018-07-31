@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_25 {
+public class offer_25_CloneList {
     public class RandomListNode {
         int label;
         RandomListNode next = null;
@@ -54,7 +54,7 @@ public class offer_25 {
 
 
     public static void main(String[] args) {
-        offer_25 test = new offer_25();
+        offer_25_CloneList test = new offer_25_CloneList();
         RandomListNode head = test.new RandomListNode(1);
         RandomListNode root = head;
         RandomListNode Phead = head;

@@ -1,8 +1,6 @@
 package test;
 
-
 public class test1 {
-
     public static boolean isAdmin(String admin){
         System.out.println(admin.toLowerCase());
         return admin.toLowerCase().equals("admin");
@@ -30,5 +28,9 @@ public class test1 {
         int y=5;
         System.out.println(x+y+"");
         System.out.println(isAdmin("Admin"));
+        System.out.println(5>>2);
+        System.out.println(1<<2);
+        System.out.println(1&5);
+        System.out.println(5>>>2);
     }
 }

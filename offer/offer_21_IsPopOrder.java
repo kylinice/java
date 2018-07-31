@@ -1,7 +1,6 @@
 package offer;
-import java.util.ArrayList;
 import java.util.Stack;
-public class offer_21 {
+public class offer_21_IsPopOrder {
 
     public boolean IsPopOrder(int [] pushA,int [] popA) {
         if(pushA.length==0 || popA.length==0){
@@ -25,7 +24,7 @@ public class offer_21 {
     }
 
     public static void main(String[] args) {
-        offer_21 test = new offer_21();
+        offer_21_IsPopOrder test = new offer_21_IsPopOrder();
         int a[] = {1,2,3,4,5};
         int b[] = {4,5,3,2,1};
         int c[] = {4,3,5,1,2};

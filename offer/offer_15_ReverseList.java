@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_14 {
+public class offer_15_ReverseList {
     public class ListNode {
         int val;
         ListNode next = null;
@@ -24,51 +24,30 @@ public class offer_14 {
             cur = cur.next;
         }
     }
-    public ListNode FindKthToTail(ListNode head,int k) {
-        ListNode fir = null;
+
+    public ListNode ReverseList(ListNode head) {
         if(head==null){
-            System.out.println("empty");
+            return null;
         }
-        int i=1;
-        //遍历head，头插法fir链表
+        ListNode fir = null;
         while(head!=null){
             ListNode data = new ListNode(head.val);
             data.next = fir;
             fir = data;
             head = head.next;
         }
-        //新建result链表存放结果
-        ListNode result = null;
-        while(fir!=null){
-            if(i<=k){
-                ListNode text = new ListNode(fir.val);
-                text.next = result;
-                result = text;
-                fir = fir.next;
-                i++;
-            }else{
-                break;
-            }
-        }
-        //如果遍历完fir链表后i<=k,即k超出了链表的长度
-        if(fir==null&&i<=k){
-            return null;
-        }else{
-            return result;
-        }
-
-
+        return fir;
     }
 
 
     public static void main(String[] args) {
-        offer_14 test = new offer_14();
+        offer_15_ReverseList test = new offer_15_ReverseList();
         test.insertFirst(4);
         test.insertFirst(3);
         test.insertFirst(2);
         test.insertFirst(1);
         test.display();
         System.out.println();
-        test.FindKthToTail(test.first,6);
+        test.ReverseList(test.first);
     }
 }

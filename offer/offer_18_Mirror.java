@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_18 {
+public class offer_18_Mirror {
     public class TreeNode{
         int val = 0;
         TreeNode left = null;
@@ -55,8 +55,8 @@ public class offer_18 {
     }
 
     public static void main(String[] args) {
-        offer_18 test = new offer_18();
-        offer_18.TreeNode t = test.new TreeNode(1);
+        offer_18_Mirror test = new offer_18_Mirror();
+        offer_18_Mirror.TreeNode t = test.new TreeNode(1);
         t.left = test.new TreeNode(2);
         t.right = test.new TreeNode(3);
         t.left.left = test.new TreeNode(4);

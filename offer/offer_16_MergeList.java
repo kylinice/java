@@ -1,8 +1,6 @@
 package offer;
 
-import java.util.List;
-
-public class offer_16 {
+public class offer_16_MergeList {
     public class ListNode {
         int val;
         ListNode next = null;
@@ -83,8 +81,8 @@ public class offer_16 {
     }
 
     public static void main(String[] args) {
-        offer_16 test1 = new offer_16();
-        offer_16 test2 = new offer_16();
+        offer_16_MergeList test1 = new offer_16_MergeList();
+        offer_16_MergeList test2 = new offer_16_MergeList();
         int a1[] = {12,11,8,6,5};
         int a2[] = {1,5};
         //链表1

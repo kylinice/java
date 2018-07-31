@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_11 {
+public class offer_11_NumberOf1 {
 
     //举个例子：一个二进制数1100，从右边数起第三位是处于最右边的一个1。
     // 减去1后，第三位变成0，它后面的两位0变成了1，而前面的1保持不变，因此得到的结果是1011.我们发现减1的结果是把最右边的一个1开始的所有位都取反了。
@@ -16,7 +16,7 @@ public class offer_11 {
     }
 
     public static void main(String[] args) {
-        offer_11 test = new offer_11();
+        offer_11_NumberOf1 test = new offer_11_NumberOf1();
         System.out.println(test.NumberOf1(-5));
     }
 }

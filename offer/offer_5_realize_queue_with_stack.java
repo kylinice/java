@@ -2,7 +2,7 @@ package offer;
 
 import java.util.Stack;
 
-public class offer_5 {
+public class offer_5_realize_queue_with_stack {
     static Stack<Integer> stack1 = new Stack<>();
     static Stack<Integer> stack2 = new Stack<>();
     public static void push(int node) {

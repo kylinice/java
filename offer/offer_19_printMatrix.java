@@ -2,7 +2,7 @@ package offer;
 
 import java.util.ArrayList;
 
-public class offer_19 {
+public class offer_19_printMatrix {
     ArrayList<Integer> arr = new ArrayList<>();
     public ArrayList<Integer> printMatrix(int[][] matrix) {
 
@@ -57,7 +57,7 @@ public class offer_19 {
     }
 
     public static void main(String[] args) {
-        offer_19 test = new offer_19();
+        offer_19_printMatrix test = new offer_19_printMatrix();
         int matrix[][] = {
                 {1, 2, 3, 4, 40},
                 {5, 6, 7, 8, 40},

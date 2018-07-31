@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_10 {
+public class offer_10_RectCover {
     public static int RectCover(int target) {
         int s=0,a=1,b=2;
         if(target<=2){

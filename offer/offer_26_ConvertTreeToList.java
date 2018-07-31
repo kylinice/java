@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_26 {
+public class offer_26_ConvertTreeToList {
     public class TreeNode {
         int val = 0;
         TreeNode left = null;
@@ -32,7 +32,7 @@ public class offer_26 {
         return head;
     }
     public static void main(String[] args) {
-        offer_26 test = new offer_26();
+        offer_26_ConvertTreeToList test = new offer_26_ConvertTreeToList();
 
     }
 }

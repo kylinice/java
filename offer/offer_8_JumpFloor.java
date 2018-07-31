@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_8 {
+public class offer_8_JumpFloor {
     public static int JumpFloor(int n) {
         int s=0,a=1,b=2;
         if(n<=2){

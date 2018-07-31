@@ -2,7 +2,7 @@ package offer;
 import java.util.ArrayList;
 import java.util.TreeSet;
 
-public class offer_27 {
+public class offer_27_Permutation {
     public ArrayList<String> Permutation(String str){
         ArrayList<String> result = new ArrayList<>();
         if(str==null||str.length()==0){
@@ -35,7 +35,7 @@ public class offer_27 {
         }
     }
     public static void main(String[] args){
-        offer_27 test = new offer_27();
+        offer_27_Permutation test = new offer_27_Permutation();
         test.Permutation("abc");
     }
 }

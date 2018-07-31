@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_7 {
+public class offer_7_Fibonacci {
     public static int Fibonacci(int n){
         int s=0,a=0,b=1;
         if(n<=1){

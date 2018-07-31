@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_17 {
+public class offer_17_HasSubtree {
 
     public static class TreeNode {
         int val = 0;

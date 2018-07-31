@@ -1,6 +1,6 @@
 package offer;
 
-public class offer_23 {
+public class offer_23_VerifySquenceOfBST {
     public boolean VerifySquenceOfBST(int [] sequence) {
         if(sequence.length==0){
             return false;
@@ -41,7 +41,7 @@ public class offer_23 {
 
 
     public static void main(String[] args) {
-        offer_23 test = new offer_23();
+        offer_23_VerifySquenceOfBST test = new offer_23_VerifySquenceOfBST();
         int a[] = {5,7,6,9,11,10,8};
         System.out.println(test.VerifySquenceOfBST(a));
     }

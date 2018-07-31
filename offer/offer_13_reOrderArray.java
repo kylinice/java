@@ -1,6 +1,6 @@
 package offer;
 import java.util.ArrayList;
-public class offer_13 {
+public class offer_13_reOrderArray {
     public void reOrderArray(int [] array) {
         ArrayList<Integer> a1 = new ArrayList<>();
         ArrayList<Integer> a2 = new ArrayList<>();
@@ -25,7 +25,7 @@ public class offer_13 {
     }
 
     public static void main(String[] args) {
-        offer_13 test = new offer_13();
+        offer_13_reOrderArray test = new offer_13_reOrderArray();
         int a[] = {4,5,2,3,7,6,8,9};
         test.reOrderArray(a);
     }

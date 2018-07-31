@@ -2,7 +2,7 @@ package offer;
 
 import java.util.ArrayList;
 
-public class offer_3 {
+public class offer_3_printListFromTailToHead {
     public class test_linklist {
         private class Data{
             private Object obj;
@@ -35,19 +35,19 @@ public class offer_3 {
         }
     }
 
-    public static ArrayList<String> printListFromTailToHead(offer_3.test_linklist.Data listNode) {
+    public static ArrayList<String> printListFromTailToHead(offer_3_printListFromTailToHead.test_linklist.Data listNode) {
         ArrayList<String> array = new ArrayList<>();
         if(listNode == null){
             System.out.println("empty");
         }
 
-        offer_3.test_linklist test = new offer_3().new test_linklist();
-        offer_3.test_linklist.Data first = null;
+        offer_3_printListFromTailToHead.test_linklist test = new offer_3_printListFromTailToHead().new test_linklist();
+        offer_3_printListFromTailToHead.test_linklist.Data first = null;
         while (listNode != null){
             System.out.println(listNode.obj.toString());
 
 
-            offer_3.test_linklist.Data data = test.new Data(listNode.obj);
+            offer_3_printListFromTailToHead.test_linklist.Data data = test.new Data(listNode.obj);
             data.next = first;
             first = data;
             listNode = listNode.next;
@@ -61,7 +61,7 @@ public class offer_3 {
 
 
     public static void main(String[] args) {
-        test_linklist li = new offer_3().new test_linklist();
+        test_linklist li = new offer_3_printListFromTailToHead().new test_linklist();
         li.insertFirst(4);
         li.insertFirst(3);
         li.insertFirst(2);

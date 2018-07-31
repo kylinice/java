@@ -2,7 +2,7 @@ package offer;
 import java.util.ArrayList;
 import java.util.Queue;
 import java.util.LinkedList;
-public class offer_22 {
+public class offer_22_PrintFromTopToBottom {
     public class TreeNode{
         int val = 0;
         TreeNode left = null;
@@ -34,8 +34,8 @@ public class offer_22 {
         return list;
     }
     public static void main(String[] args) {
-        offer_22 test = new offer_22();
-        offer_22.TreeNode t = test.new TreeNode(1);
+        offer_22_PrintFromTopToBottom test = new offer_22_PrintFromTopToBottom();
+        offer_22_PrintFromTopToBottom.TreeNode t = test.new TreeNode(1);
         //左
         t.left = test.new TreeNode(2);
         t.left.left = test.new TreeNode(4);

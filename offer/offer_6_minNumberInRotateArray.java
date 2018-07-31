@@ -1,6 +1,6 @@
 package offer;
 import java.util.ArrayList;
-public class offer_6 {
+public class offer_6_minNumberInRotateArray {
     public static int minNumberInRotateArray(int [] array) {
         int min = 0;
         if(array.length == 0)

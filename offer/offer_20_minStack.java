@@ -1,7 +1,7 @@
 package offer;
 import java.util.Stack;
 
-public class offer_20 {
+public class offer_20_minStack {
     Stack<Integer> stack1 = new Stack<>();
     Stack<Integer> stack2 = new Stack<>();
     public void push(int node) {
@@ -39,7 +39,7 @@ public class offer_20 {
     }
 
     public static void main(String[] args) {
-        offer_20 test = new offer_20();
+        offer_20_minStack test = new offer_20_minStack();
         test.push(2);
         test.push(3);
         test.push(2);
