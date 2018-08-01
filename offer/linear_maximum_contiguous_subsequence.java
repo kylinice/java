@@ -1,14 +1,10 @@
 package offer;
 
-import javax.sound.midi.Soundbank;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class linear_maximum_contiguous_subsequence {
 
     public static void subMax4(int a[]){
-        ArrayList<Integer> bb = new ArrayList<>();
-        ArrayList<Integer> cc = new ArrayList<>();
         int max = 0, thisMax = 0;
         for(int i=0; i<a.length; i++){
             thisMax += a[i];

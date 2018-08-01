@@ -1,13 +1,13 @@
 package test;
 
-class Base
+class Base1
 {
     public void method()
     {
         System.out.println("Base");
     }
 }
-class Son extends Base
+class Son extends Base1
 {
     public void method()
     {
@@ -27,7 +27,7 @@ public class Test01
     public static void main(String[] args)
     {   Test01 test = new Test01();
         test.sss();
-        Base base = new Son();
+        Base1 base = new Son();
         base.method();
         Son son=(Son)base;
         son.methodB();
