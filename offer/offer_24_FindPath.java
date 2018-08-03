@@ -35,6 +35,12 @@ public class offer_24_FindPath {
     public static void main(String[] args) {
         offer_24_FindPath test = new offer_24_FindPath();
         offer_24_FindPath.TreeNode t = test.new TreeNode(1);
+        /*
+                        1
+                   2         3
+                4     5   6     7
+                     3   8
+         */
         //左
         t.left = test.new TreeNode(2);
         t.left.left = test.new TreeNode(4);
