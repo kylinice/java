@@ -1,9 +1,9 @@
 package test;
 
-public class Base
+public class Base_1
 {
     private String baseName = "base";
-    public Base()
+    public Base_1()
     {
         callName();
     }
@@ -13,7 +13,7 @@ public class Base
         System. out. println(baseName);
     }
 
-    static class Sub extends Base
+    static class Sub extends Base_1
     {
         private String baseName = "sub";
         public void callName()
@@ -23,6 +23,6 @@ public class Base
     }
     public static void main(String[] args)
     {
-        Base b = new Sub();
+        Base_1 b = new Sub();
     }
 }
