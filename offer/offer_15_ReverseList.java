@@ -1,5 +1,7 @@
 package offer;
-
+/*
+输入一个链表，反转链表后，输出新链表的表头。
+ */
 public class offer_15_ReverseList {
     public class ListNode {
         int val;

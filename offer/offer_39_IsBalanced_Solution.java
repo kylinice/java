@@ -1,5 +1,7 @@
 package offer;
-
+/*
+输入一棵二叉树，判断该二叉树是否是平衡二叉树。
+ */
 public class offer_39_IsBalanced_Solution {
     public class TreeNode{
         int val = 0;

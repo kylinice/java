@@ -1,5 +1,7 @@
 package offer;
-
+/*
+统计一个数字在排序数组中出现的次数。
+ */
 public class offer_37_GetNumberOfK {
     public int GetNumberOfK(int [] array , int k) {
         int num = 0;
