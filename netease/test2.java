@@ -80,13 +80,17 @@ public class test2 {
             while(matcher2.find()){
                 list2.add(matcher2.group());
             }
-            if (checkA(list2)) return;
+            if (checkA(list2)) {
+                return;
+            }
             //大写字母
             ArrayList<String> list3 = new ArrayList<>();
             while(matcher3.find()){
                 list3.add(matcher3.group());
             }
-            if (checkA(list3)) return;
+            if (checkA(list3)){
+                return;
+            }
             //判断是否包含常见字符串
             if(password.contains("password") || password.contains("admin")
                     ||password.contains("qwerty") || password.contains("hello") ||

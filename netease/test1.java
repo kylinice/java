@@ -44,6 +44,5 @@ public class test1 {
         for(int i=0;i<n;i++){
             fee(a[i]);
         }
-        System.out.println('d'-'c');
     }
 }
