@@ -7,6 +7,7 @@ package offer;
 */
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 public class offer_27_Permutation {
@@ -43,6 +44,10 @@ public class offer_27_Permutation {
     }
     public static void main(String[] args){
         offer_27_Permutation test = new offer_27_Permutation();
-        test.Permutation("abc");
+        ArrayList<String> list = new ArrayList<>();
+        list = test.Permutation("aazz");
+        for(String str:list){
+            System.out.println(str);
+        }
     }
 }
