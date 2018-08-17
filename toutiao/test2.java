@@ -19,11 +19,11 @@ public class test2 {
         Collections.sort(list2);
         StringBuilder bud = new StringBuilder();
         if(list1.size()==1 && list2.size()==1){
-            System.out.println(bud.append(list1.get(0) + "," + list2.get(0)));
+            System.out.println(bud.append(list1.get(0)).append(",").append(list2.get(0)));
             return;
         }
         bud.append(list1.get(0));
-        int flag = 0;
+        int flag;
         for(int i=1;i<list1.size();){
             if(list2.get(i-1)>=list1.get(i)){
                 flag=0;
@@ -72,7 +72,7 @@ public class test2 {
                 bud.append(str[i]).append(";");
             }
         }
-        System.out.println(bud.toString());
+        //System.out.println(bud.toString());
         find(bud.toString());
     }
 }
