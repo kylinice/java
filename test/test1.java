@@ -1,11 +1,14 @@
 package test;
 
 public class test1 {
+    private int test_int = 1;
     public static boolean isAdmin(String admin){
         System.out.println(admin.toLowerCase());
         return admin.toLowerCase().equals("admin");
     }
     public static void main(String[] args) {
+        test1 test = new test1();
+        System.out.println(test.test_int);
         String s = "hello";
         String t = "hello";
         char c[] = {'h', 'e', 'l', 'l', 'o'};
