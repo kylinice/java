@@ -4,7 +4,7 @@ public class quicksort {
     private static int partition(int a[], int low, int high){
         int pivot = a[low];
         while(low<high){
-            while (low<high && a[high]>pivot){
+            while (low<high && a[high]>=pivot){
                 high--;
             }
             a[low] = a[high];
