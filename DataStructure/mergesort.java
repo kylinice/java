@@ -17,19 +17,26 @@ public class mergesort {
         int index = 0;
         while(left<=mid && right<=high){
             if(a[left]<=a[right]){
-                temp[index] = a[left++];
+                temp[index++] = a[left++];
             }else{
-                temp[index] = a[right++];
+                temp[index++] = a[right++];
             }
         }
-
+        while(left<=mid){
+            temp[index++] = a[left++];
+        }
+        while(right<=high){
+            temp[index++] = a[right++];
+        }
+        for(int i=0;i<temp.length;i++){
+            a[low++] = temp[i];
+        }
 
     }
     public static void main(String[] args) {
-        int a[] = {49, 35, 12, 56, 67, 95, 19, 49, 8};
+        int a[] = {49, 35, 12, 4, 3, 95, 19, 49, 8};
         mergesort(a, 0, a.length-1);
-        for(int i:a){
-            System.out.print(i+",");
-        }
+        System.out.println("归并排序后：");
+        System.out.println(Arrays.toString(a));
     }
 }
