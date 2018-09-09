@@ -1,8 +1,8 @@
-package jibite;
+package ali;
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class test3 {
+public class test2 {
     private static void find(String loc, String xy_arr){
         String[] a = loc.split(",");
         String[] b = xy_arr.split(",");

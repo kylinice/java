@@ -42,8 +42,6 @@ public class test2 {
                 bud.append(",").append(list2.get(list2.size() - 1)).append(";");
             }
         }
-
-
         System.out.println(bud.deleteCharAt(bud.length()-1).toString());
 
     }
