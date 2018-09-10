@@ -1,5 +1,5 @@
 package test;
-import java.util.HashMap;
+
 //懒汉式
 class LazySingleton{
     private static LazySingleton instance = null;
@@ -34,4 +34,13 @@ class EagerSingleton{
         System.out.println(test1==test2);
     }
 }
+//枚举
+enum EnumSingleton{
+    INSTANCE;
 
+    public static void main(String[] args) {
+        EnumSingleton test1 = EnumSingleton.INSTANCE;
+        EnumSingleton test2 = EnumSingleton.INSTANCE;
+        System.out.println(test1==test2);
+    }
+}
