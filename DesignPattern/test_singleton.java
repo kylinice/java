@@ -1,4 +1,4 @@
-package test;
+package DesignPattern;
 
 //懒汉式
 class LazySingleton{
