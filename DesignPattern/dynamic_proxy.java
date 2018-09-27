@@ -4,8 +4,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class dynamic_proxy implements InvocationHandler {
-    private ICoder coder;
-    public dynamic_proxy(ICoder coder){
+    private Object coder;
+    public dynamic_proxy(Object coder){
         this.coder = coder;
     }
     //回调方法 拦截到目标对象的时候执行
