@@ -50,7 +50,20 @@ public class dig_gold {
         System.out.println(result[m]);
     }
     public static int maxGold_resursion(int n, int m, int[] gold, int[] person){
-        return 1;
+        if(n==1){
+            if(m<person[n]){
+                return 0;
+            }else{
+                return gold[n];
+            }
+        }else{
+            if(m<person[n]){
+                return maxGold_resursion(n-1,m,gold,person);
+            }else{
+                return Math.max(maxGold_resursion(n-1,m,gold,person),
+                        maxGold_resursion(n-1,m-person[n], gold, person)+gold[n]);
+            }
+        }
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -67,6 +80,7 @@ public class dig_gold {
             person[i] = in.nextInt();
         }
         maxGold_dynamic(n,m,gold,person);
+        System.out.println(maxGold_resursion(n,m,gold,person));
         //int W=13;							//13个人:1250
         //int W=1;							//1个人:0
         //int W=3;							//3个人:350

@@ -15,7 +15,6 @@ public class TestClass {
         ((TestClass)null).testMethod();
         System.out.println(3^4^5^6^4^3);
         List<Integer> list = new ArrayList<>();
-
         list.add(12);
 //这里直接添加会报错
         //list.add("a");
