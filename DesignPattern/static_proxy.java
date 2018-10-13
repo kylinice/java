@@ -6,6 +6,7 @@ package DesignPattern;
  */
 interface ICoder{
     void implDemands(String demandName);
+    void test(String str);
 }
 /*
 2.真实角色
@@ -19,6 +20,10 @@ class JavaCoder implements ICoder{
     @Override
     public void implDemands(String demandName){
         System.out.println(name + " implements demand:" + demandName + " in Java!");
+    }
+    @Override
+    public void test(String str){
+        System.out.println("test");
     }
 }
 /*
@@ -39,6 +44,10 @@ public class static_proxy implements ICoder{
             return;
         }//这样，当客户再有增加功能的需求时，产品经理就直接回绝了，程序员无需再对这部分需求做过滤。
         coder.implDemands(demandName);//原来只有这一行
+    }
+    @Override
+    public void test(String str){
+        System.out.println("test");
     }
 }
 //客户类

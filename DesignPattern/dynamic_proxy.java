@@ -32,5 +32,6 @@ class dynamic_client{
                 coder.getClass().getInterfaces(), handler);
         //通过代理类执行implDemands方法
         proxy.implDemands("Modify user Management");
+        proxy.test("33");
     }
 }
