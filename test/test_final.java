@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 
 public class test_final {
     private final String str = new String("java");
+    private static final String message = "taobao";
     //private final String str = "yes";
     private void test(){
         System.out.println("test");
@@ -23,5 +24,10 @@ public class test_final {
         field1.setAccessible(true);
         field1.set(test1, "yes_1");
         System.out.println(test1.str);
+        String a = "tao" + "bao";
+        String b = "tao";
+        String c = "bao";
+        System.out.println(a==message);
+        System.out.println((b+c)==message);
     }
 }
